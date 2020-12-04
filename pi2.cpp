@@ -14,6 +14,7 @@
 /****************************************/
 
 #include <iostream>
+#include <string>
 
 #ifdef _WIN32
 #include <windows.h>
@@ -36,9 +37,13 @@ int main(int argc, char **argv){
 
     unsigned int ndigit = 60;   // número de dígitos
 
-    // Verifica se o número de dígitos foi dado na execução
-    if(argc == 2)
-        ndigit = atoi(argv[1]);
+    // Verifica se foi dado um argumento na execução
+    if(argc == 2){
+        if (std::string(argv[1]) == "max") // Calcula o número máximo de dígitos suportados (teoricamente) pelo programa
+            ndigit = 4294967295;
+        else
+            ndigit = atoi(argv[1]);
+    }
 
     // Caso contrário é dada ajuda de execução e n é assumido como 60, continuando a execução
     else {
