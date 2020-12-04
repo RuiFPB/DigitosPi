@@ -11,5 +11,4 @@ void mult(long *resultado, long val);
 void div(long *resultado, long denom);
 void escreve(long *resultado);
 
-
 #endif

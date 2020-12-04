@@ -14,6 +14,11 @@
 /****************************************/
 
 #include <iostream>
+
+#ifdef _WIN32
+#include <windows.h>
+#endif
+
 #include "pi2.h"
 
 #define BASE 10000
@@ -25,6 +30,10 @@ long *t2;
 long *t3;
 
 int main(int argc, char **argv){
+    #ifdef _WIN32
+    SetConsoleOutputCP(65001);
+    #endif
+
     int ndigit = 60;   // número de dígitos
 
     // Verifica se o número de dígitos foi dado na execução
