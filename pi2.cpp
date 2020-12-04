@@ -34,7 +34,7 @@ int main(int argc, char **argv){
     SetConsoleOutputCP(65001);
     #endif
 
-    int ndigit = 60;   // número de dígitos
+    unsigned int ndigit = 60;   // número de dígitos
 
     // Verifica se o número de dígitos foi dado na execução
     if(argc == 2)
