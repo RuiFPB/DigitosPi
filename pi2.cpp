@@ -65,6 +65,9 @@ int main(int argc, char **argv){
     if (!tot || !t1 || !t2 || !t3) {
         std::cout << "Memória insuficiente" << std::endl;
         return 1;
+    } else {
+        std::cout << "A calcular " << ndigit << " digitos de pi....\n";
+        std::cout << "Por favor aguarde, poderá demorar algum tempo...\n";
     }
 
 
