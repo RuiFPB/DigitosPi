@@ -2,3 +2,4 @@ pi2
 win-port/*
 pi2.h.*
 *.o
+*.exe
