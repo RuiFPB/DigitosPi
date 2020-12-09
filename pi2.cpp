@@ -10,7 +10,7 @@
 /* Sendo n o número de dígitos          */
 /* Compilado com g++                    */
 /****************************************/
-/* Os últimos 3 dígitos estão errados...*/
+/* Os últimos dígitos estão errados...  */
 /****************************************/
 
 #include <iostream>
