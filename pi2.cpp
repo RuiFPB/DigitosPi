@@ -143,9 +143,9 @@ void arctan(long *resultado, long *w1, long *w2, long denom, long passo){
 }
 
 //Compara resultado com 0 e devolve true se for 0
-bool zero(long *resultado){
+bool zero(long *nm){
     for(int i = 0; i < nblock; i++)
-        if (resultado[i])
+        if (nm[i])
             return false;
     return true;
 }
@@ -221,10 +221,9 @@ void escreve(long *resultado){
             if(s[k] == ' ') 
                 s[k] = '0';
 
-            std::cout << s[0] << s[1] << s[2] << s[3];
-            if(i%15 == 0)
-                std::cout << '\n';
+        std::cout << s[0] << s[1] << s[2] << s[3];
+        if(i%15 == 0)
+            std::cout << '\n';
     }
     std::cout << '\n';
 }
-
